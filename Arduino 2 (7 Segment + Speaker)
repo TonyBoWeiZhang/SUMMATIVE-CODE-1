@@ -1,0 +1,279 @@
+void setup()
+{
+  pinMode(1, OUTPUT);//Speaker output.
+  
+  pinMode(0, OUTPUT);//Outputs for the 7 segment.
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+
+}
+
+void loop()
+{
+  digitalWrite(0, LOW); //One set of lights turn Green and remains in that state for 15 seconds, for first 10 seconds 7 segment will remain dark.
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(10000); //No countdown yet.
+  
+  digitalWrite(0, HIGH); //Countdown starts, 7 segment displays 5 for one second.
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second (75% so that it will sound more like a beep).
+
+  delay(1000); //Countdown Start.
+  
+  digitalWrite(0, HIGH);//7 segment displays 4
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 3
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 2
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 1
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  tone(1, 1047, 750);//Speaker plays note C6 (C6 instead of C5 so that the drivers know the light has switched) for 75% of a second.
+  
+  delay(1000);
+
+  digitalWrite(0, LOW); //One pair of lights changes to yellow for 7 seconds. 7 Segment remains dark for 2 seconds.
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(2000); //No countdown yet.
+
+  
+  digitalWrite(0, HIGH); //7 segment displays 5
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000); //Countdown started.
+  
+  digitalWrite(0, HIGH); //7 segment displays 4
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 3
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 2
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 1
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  tone(1, 1047, 750);//Speaker plays note C6 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //One set of lights turn Green and remains in that state for 15 seconds, for first 10 seconds 7 segment will remain dark.
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(10000); //No countdown yet.
+  
+  digitalWrite(0, HIGH); //7 segment displays 5
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000); //No countdown yet.
+  
+  digitalWrite(0, HIGH);//7 segment displays 4
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 3
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 2
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 1
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  tone(1, 1047, 750);//Speaker plays note C6 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //One pair of lights changes to yellow for 7 seconds. 7 Segment remains dark for 2 seconds.
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+
+  delay(2000);
+  
+  digitalWrite(0, HIGH); //7 segment displays 5
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+
+  delay(1000);
+  
+  digitalWrite(0, HIGH);//7 segment displays 4
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 3
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 2
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  tone(1, 523, 750);//Speaker plays note C5 for 75% of a second.
+  
+  delay(1000);
+  
+  digitalWrite(0, LOW); //7 segment displays 1
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  tone(1, 1047, 750);//Speaker plays note C6 for 75% of a second.
+  
+  delay(1000);
+  
+}
