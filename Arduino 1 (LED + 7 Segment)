@@ -1,0 +1,366 @@
+void setup()
+{
+  pinMode(1, OUTPUT);//Traffic Light Pair 1 Outputs.
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  
+  pinMode(4, OUTPUT);//Traffic Light Pair 2 Outputs
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  
+  pinMode(0, OUTPUT);//7 Segment outputs.
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+
+  digitalWrite(1, LOW);//Ensure traffic light LEDs are off.
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+}
+
+void loop()
+{
+  
+  digitalWrite(1, HIGH); //Pair 1's traffic lights red, Pair 2's set green.
+  digitalWrite(6, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(3, LOW);
+  
+  digitalWrite(0, LOW); //Green Light -> Yellow Light
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(10000); //No countdown yet.
+
+  digitalWrite(1, HIGH); //Pair 1's traffic lights red, Pair 2's set green.
+  digitalWrite(6, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(3, LOW);
+  
+  digitalWrite(0, HIGH); //5
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+
+  delay(1000); //Countdown Start.
+
+  digitalWrite(1, HIGH); //Pair 1's traffic lights red, Pair 2's set green.
+  digitalWrite(6, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(3, LOW);
+  
+  digitalWrite(0, HIGH);//4
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(1, HIGH); //Pair 1's traffic lights red, Pair 2's set green.
+  digitalWrite(6, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(3, LOW);
+  
+  digitalWrite(0, LOW); //3
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(1, HIGH); //Pair 1's traffic lights red, Pair 2's set green.
+  digitalWrite(6, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(3, LOW);
+  
+  digitalWrite(0, LOW); //2
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(1, HIGH); //Pair 1's traffic lights red, Pair 2's set green.
+  digitalWrite(6, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(3, LOW);
+  
+  digitalWrite(0, LOW); //1
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(1000);
+
+  digitalWrite(1, LOW); //Pair 1's set of traffic lights remain red, Pair 2's green lights OFF, Pair 2's yellow lights ON.
+  digitalWrite(2, HIGH);
+  
+  digitalWrite(0, LOW); //Yellow Light -> Red Light
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(2000); //No countdown yet.
+
+  digitalWrite(1, LOW); //Pair 1's set of traffic lights remain red, Pair 2's green lights OFF, Pair 2's yellow lights ON.
+  digitalWrite(2, HIGH);
+  
+  digitalWrite(0, HIGH); //5
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000); //Countdown started.
+
+  digitalWrite(1, LOW); //Pair 1's set of traffic lights remain red, Pair 2's green lights OFF, Pair 2's yellow lights ON.
+  digitalWrite(2, HIGH);
+  
+  digitalWrite(0, HIGH);//4
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(1, LOW); //Pair 1's set of traffic lights remain red, Pair 2's green lights OFF, Pair 2's yellow lights ON.
+  digitalWrite(2, HIGH);
+  
+  digitalWrite(0, LOW); //3
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(1, LOW); //Pair 1's set of traffic lights remain red, Pair 2's green lights OFF, Pair 2's yellow lights ON.
+  digitalWrite(2, HIGH);
+  
+  digitalWrite(0, LOW); //2
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+
+  delay(1000);
+
+  digitalWrite(1, LOW); //Pair 1's set of traffic lights remain red, Pair 2's green lights OFF, Pair 2's yellow lights ON.
+  digitalWrite(2, HIGH);
+  
+  digitalWrite(0, LOW); //1
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(1000);
+  
+  digitalWrite(3, HIGH); //Pair 1's traffic lights green, Pair 2's set red.
+  digitalWrite(2, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(4, HIGH);
+  
+  digitalWrite(0, LOW); //Green Light -> Yellow Light
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(10000); //No countdown yet.
+
+  digitalWrite(3, HIGH); //Pair 1's traffic lights green, Pair 2's set red.
+  digitalWrite(2, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(4, HIGH);
+  
+  digitalWrite(0, HIGH); //5
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000); //No countdown yet.
+
+  digitalWrite(3, HIGH); //Pair 1's traffic lights green, Pair 2's set red.
+  digitalWrite(2, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(4, HIGH);
+  
+  digitalWrite(0, HIGH);//4
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(3, HIGH); //Pair 1's traffic lights green, Pair 2's set red.
+  digitalWrite(2, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(4, HIGH);
+  
+  digitalWrite(0, LOW); //3
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(3, HIGH); //Pair 1's traffic lights green, Pair 2's set red.
+  digitalWrite(2, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(4, HIGH);
+  
+  digitalWrite(0, LOW); //2
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(3, HIGH); //Pair 1's traffic lights green, Pair 2's set red.
+  digitalWrite(2, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(4, HIGH);
+  
+  digitalWrite(0, LOW); //1
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  
+  delay(1000);
+
+  digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
+  digitalWrite(3, HIGH);
+  
+  digitalWrite(0, LOW); //Yellow Light -> Red Light
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+
+  delay(2000);
+
+  digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
+  digitalWrite(3, HIGH);
+  
+  digitalWrite(0, HIGH); //5
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+
+  delay(1000);
+
+  digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
+  digitalWrite(3, HIGH);
+  
+  digitalWrite(0, HIGH);//4
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
+  digitalWrite(3, HIGH);
+  
+  digitalWrite(0, LOW); //3
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
+  digitalWrite(3, HIGH);
+  
+  digitalWrite(0, LOW); //2
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  
+  delay(1000);
+
+  digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
+  digitalWrite(3, HIGH);
+  
+  digitalWrite(0, LOW); //1
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  delay(1000);
+  
+}
