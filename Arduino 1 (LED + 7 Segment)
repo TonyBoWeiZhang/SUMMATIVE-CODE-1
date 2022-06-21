@@ -288,6 +288,7 @@ void loop()
 
   digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
   digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
   
   digitalWrite(0, LOW); //Yellow Light -> Red Light
   digitalWrite(7, LOW);
@@ -301,6 +302,7 @@ void loop()
 
   digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
   digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
   
   digitalWrite(0, HIGH); //5
   digitalWrite(7, HIGH);
@@ -314,6 +316,7 @@ void loop()
 
   digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
   digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
   
   digitalWrite(0, HIGH);//4
   digitalWrite(7, LOW);
@@ -327,6 +330,7 @@ void loop()
 
   digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
   digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
   
   digitalWrite(0, LOW); //3
   digitalWrite(7, HIGH);
@@ -340,6 +344,7 @@ void loop()
 
   digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
   digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
   
   digitalWrite(0, LOW); //2
   digitalWrite(7, HIGH);
@@ -353,6 +358,7 @@ void loop()
 
   digitalWrite(5, HIGH); //Pair 1's green lights OFF, Pair 1's yellow lights ON, Pair 2's red lights remain ON. 
   digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
   
   digitalWrite(0, LOW); //1
   digitalWrite(7, LOW);
